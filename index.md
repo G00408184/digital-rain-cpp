@@ -1,7 +1,8 @@
 
 <h1>Title: "Digital Rain: C++ Project"<h1>
 
-<h1>Digital Rain in Modern C++</h1>
+
+<h2>Digital Rain in Modern C++</h1>
 
 <p>Welcome to my blog on creating a <strong>Digital Rain</strong> effect using <strong>Modern C++</strong>! Inspired by the iconic Matrix-style digital rain, this project is an exercise in graphics programming, randomization, and performance optimization.</p>
 
@@ -12,7 +13,6 @@
   <li>✅ Randomized falling characters</li>
   <li>✅ Character lifespan and fading effect</li>
   <li>✅ Console-based rendering with Windows API</li>
-  <li>✅ Frame buffering for smooth rendering</li>
 </ul>
 
 <h2>Implementation</h2>
