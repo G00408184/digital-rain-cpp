@@ -25,4 +25,4 @@ A bullet list:
 
 You can add an impage that has been uploaded to the repository in a /docs/assets/images folder.
 
-<img src="https://raw.githubusercontent.com/G00408184/digital-rain-cpp/blob/main/docs/assets/images/image.png" width="400" height="300">
+<img src="https://raw.githubusercontent.com/G00408184/digital-rain-cpp/main/docs/assets/images/image.png" width="400" height="300">
