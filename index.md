@@ -25,7 +25,5 @@ A bullet list:
 
 You can add an impage that has been uploaded to the repository in a /docs/assets/images folder.
 
-<video width="400" height="300" controls>
-  <source src="https://raw.githubusercontent.com/G00408184/digital-rain-cpp/main/docs/assets/video/Recording%20%231.mp4" type="video/mp4">
-  Your browser does not support the video tag.
-</video>
+<img src="https://raw.githubusercontent.com/G00408184/digital-rain-cpp/main/docs/assets/video/Recording1-ezgif.com-video-to-gif-converter.gif" width="800" height="418">
+
