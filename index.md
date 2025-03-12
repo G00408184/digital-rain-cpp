@@ -40,7 +40,7 @@ void DigitalRain::run() {
 <h2>Final Result</h2>
 <p>Here’s a preview of the <strong>Digital Rain Effect</strong> in action:</p>
 
-<img src="https://raw.githubusercontent.com/G00408184/digital-rain-cpp/main/docs/assets/video/Recording1-ezgif.com-video-to-gif-converter.gif" width="800" height="418">
+<img src="https://raw.githubusercontent.com/G00408184/digital-rain-cpp/main/docs/assets/video/ezgif-7b767ce6b2d820.gif" width="800" height="418">
 
 <h2>GitHub Repository</h2>
 <p>For full source code, visit the <a href="https://github.com/G00408184/digital-rain-cpp">GitHub repository</a>.</p>
