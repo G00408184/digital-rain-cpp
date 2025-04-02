@@ -1,0 +1,15 @@
+site_name: Digital Rain C++ Project
+site_url: https://g00408184.github.io/digital-rain-cpp/
+
+nav:
+  - Home: index.md
+  - Design & Testing: design.md
+  - Algorithm: algorithm.md
+  - Problem Solving: problemsolving.md
+  - Reflection: reflection.md
+
+theme:
+  name: material
+  language: en
+
+docs_dir: docs

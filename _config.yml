@@ -1,9 +1,0 @@
-# Site settings
-title: Digital Rain Modern C++ Project Blog
-author:
-  name: Jakub
-  email: TheBestCoder@atu.com
-description: "A blog."
-
-# Build settings
-remote_theme: jekyll/minima
