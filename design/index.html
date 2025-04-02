@@ -277,9 +277,27 @@
 </li>
       
         <li class="md-nav__item">
+  <a href="#object-relationships" class="md-nav__link">
+    <span class="md-ellipsis">
+      📦 Object Relationships
+    </span>
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
   <a href="#testing-strategy" class="md-nav__link">
     <span class="md-ellipsis">
-      🧪 Testing Strategy
+      ✅ Testing Strategy
+    </span>
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#key-design-choices" class="md-nav__link">
+    <span class="md-ellipsis">
+      🧠 Key Design Choices
     </span>
   </a>
   
@@ -395,9 +413,27 @@
 </li>
       
         <li class="md-nav__item">
+  <a href="#object-relationships" class="md-nav__link">
+    <span class="md-ellipsis">
+      📦 Object Relationships
+    </span>
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
   <a href="#testing-strategy" class="md-nav__link">
     <span class="md-ellipsis">
-      🧪 Testing Strategy
+      ✅ Testing Strategy
+    </span>
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#key-design-choices" class="md-nav__link">
+    <span class="md-ellipsis">
+      🧠 Key Design Choices
     </span>
   </a>
   
@@ -419,20 +455,43 @@
 
 
 
-<h1 id="design-test">Design &amp; Test</h1>
+<h1 id="design-test">🎨 Design &amp; Test</h1>
 <hr />
 <p><a href="../">🏠 Home</a> | <a href="./">🎨 Design</a> | <a href="../algorithm/">🧠 Algorithm</a> | <a href="../problemsolving/">🐞 Debugging</a> | <a href="../reflection/">🧠 Reflection</a></p>
+<hr />
 <h2 id="architecture-overview">🧱 Architecture Overview</h2>
-<p>The project is composed of 3 classes:
-- <code>DigitalRain</code>: Manages the animation loop and rendering
-- <code>DropChar</code>: A struct for each falling character (value, color, lifespan)
-- <code>CharacterStream</code>: Generates random characters</p>
-<h2 id="testing-strategy">🧪 Testing Strategy</h2>
+<p>The program is designed with 3 main components:</p>
 <ul>
-<li>Manual console resizing</li>
-<li>Keyboard exit using <code>_kbhit()</code></li>
-<li>Visual inspection of fading, motion, and spacing</li>
+<li><code>DigitalRain</code>: Manages the animation loop, frame timing, and rendering logic.</li>
+<li><code>DropChar</code>: Struct representing a falling character with position, lifespan, value, and color.</li>
+<li><code>CharacterStream</code>: Utility class that generates randomized alphanumeric characters.</li>
 </ul>
+<hr />
+<h2 id="object-relationships">📦 Object Relationships</h2>
+<ul>
+<li><code>DigitalRain</code> contains a vector of <code>std::list&lt;DropChar&gt;</code> — each representing a vertical column.</li>
+<li>Characters are spawned, updated, and rendered via this structure.</li>
+<li><code>CharacterStream</code> is only called during creation of new drops.</li>
+</ul>
+<hr />
+<h2 id="testing-strategy">✅ Testing Strategy</h2>
+<ul>
+<li>🖥️ <strong>Manual Resizing</strong>: Console window is resized to test dynamic column adaptation.</li>
+<li>🧪 <strong>Keyboard Input</strong>: Exit tested using <code>_kbhit()</code> for clean shutdown.</li>
+<li>👁️ <strong>Visual Tests</strong>:</li>
+<li>Ensured proper fading, drop speed, and color dimming.</li>
+<li>Verified characters did not overlap or "stick".</li>
+<li>🔁 <strong>Frame Stability</strong>: Tested with varying frame delays (Sleep values).</li>
+</ul>
+<hr />
+<h2 id="key-design-choices">🧠 Key Design Choices</h2>
+<ul>
+<li>❌ Avoided full screen clearing to reduce flicker (<code>system("cls")</code>).</li>
+<li>✅ Used <code>SetConsoleCursorPosition()</code> for precision overwrite.</li>
+<li>✅ Used <code>std::list</code> for fast removal of expired characters mid-loop.</li>
+<li>✅ Colors and fade transitions were optimized using bitwise masking.</li>
+</ul>
+<hr />
 
 
 
