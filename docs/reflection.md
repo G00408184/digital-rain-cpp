@@ -2,7 +2,7 @@
 
 ## 📚 Learning Journey
 
-Creating the Digital Rain effect has deepened my understanding of real-time rendering, console programming, and the principles of modern C++.
+Working on the Digital Rain project was honestly one of the most fun coding tasks I've done. It really helped me understand how real-time animations work in the console and gave me a better grasp of how to structure a C++ program using modern techniques. Seeing the characters fall and fade in real time felt really satisfying.
 
 ## 🧰 Modern C++ Practices Used
 
